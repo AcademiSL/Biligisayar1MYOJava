@@ -5,17 +5,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class BilgisayarMainController {
+public class BilgisayarLoginController {
 
-    @GetMapping ("/main")
+    @GetMapping ("/login")
     public String mainPageG(){
-        return "index";
+        return "login";
     }
 
-    @PostMapping("/")
+    @PostMapping("/login")
     public String mainPageP(String login, String password){
         System.out.println(login+" "+password);
-        return "index";
+        return "login";
     }
 
 }
