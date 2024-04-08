@@ -1,9 +1,9 @@
 package com.example.demo.repo;
 
-import com.example.demo.model.MainModel;
+import com.example.demo.model.SignUpModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MainRepo extends JpaRepository<MainModel, Long> {
+public interface SignUpRepo extends JpaRepository<SignUpModel, Integer> {
 }

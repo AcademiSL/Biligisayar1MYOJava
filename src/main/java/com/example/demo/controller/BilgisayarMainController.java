@@ -19,8 +19,11 @@ public class BilgisayarMainController {
 
     @PostMapping("/")
     public String mainPageP(String login, String password) {
-        mainRepo.save(new MainModel(login, password));
+        MainModel mainModel = new MainModel(login, password);
+        mainRepo.save(mainModel);
         return "index";
     }
 
 }
+
+
