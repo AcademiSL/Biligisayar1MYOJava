@@ -10,4 +10,5 @@ public class Bilgisayar1Application {
 		SpringApplication.run(Bilgisayar1Application.class, args);
 	}
 
+
 }

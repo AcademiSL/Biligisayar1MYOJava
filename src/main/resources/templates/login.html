@@ -1,61 +1,61 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Login​">
-    <meta name="description" content="">
-    <title>Home</title>
-    <link rel="stylesheet" href="login/nicepage.css" media="screen">
-    <link rel="stylesheet" href="login/Home.css" media="screen">
-    <script class="u-script" type="text/javascript" src="login/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="login/nicepage.js" defer=""></script>
-    <meta name="referrer" content="origin">
-    <link id="u-theme-google-font" rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-
-
-    <script type="application/ld+json">{
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "",
-        "logo": "images/default-logo.png"
-    }</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Home">
-    <meta property="og:type" content="website">
+    <title>Login Page</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        .login-container {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type="submit"] {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          background-color: #5cb85c;
+          color: white;
+          cursor: pointer;
+        }
+        input[type="submit"]:hover {
+          background-color: #4cae4c;
+        }
+    </style>
 </head>
-<body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false"
-      class="u-body u-xl-mode" data-lang="en">
+<body>
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
 
-<section class="u-clearfix u-palette-1-base u-section-1" id="carousel_1a80">
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="custom-expanded u-align-left u-container-align-left u-container-style u-group u-white u-group-1">
-            <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
-                <h2 class="u-align-left u-text u-text-1">Login </h2>
-                <div class="u-align-left u-expanded-width u-form u-form-1">
-                    <form action="/" style="padding: 0px;" name="form" method="post">
-                        <div class="u-form-group u-form-group-1">
-                            <label for="text-3640" class="u-form-control-hidden u-label"></label>
-                            <input type="text" placeholder="Login" id="text-3640" name="login"
-                                   class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle">
-                        </div>
-                        <div class="u-form-group u-form-group-2">
-                            <label for="text-68d6" class="u-form-control-hidden u-label"></label>
-                            <input type="text" placeholder="password" id="text-68d6" name="password"
-                                   class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle">
-                        </div>
-                        <div class="u-align-left u-form-group u-form-submit">
-                            <a href="#"
-                               class="u-border-2 u-border-black u-btn u-btn-submit u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-1">Login </a>
-                            <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
 
+        <input type="submit" value="Login">
+    </form>
+</div>
 </body>
+
 </html>
